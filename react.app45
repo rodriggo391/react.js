@@ -1,0 +1,32 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+export default function App() {}
+const Header = () => {
+  const myStyle = {
+    color: "white",
+    backgroundColor: "#234",
+    padding: "10px",
+    fontFamily: "new times roman",
+    border: "10px solid",
+    borderRadius: "5px",
+    textAlign: "center",
+    lineHeight: 3.8,
+    marginBottom: 68,
+  };
+  const estilo = {
+    textAlign: "center",
+    border: "10px solid",
+    borderRadius: "5px",
+  }
+  return (
+    <>
+      <h1 style={myStyle}>Home Page</h1>
+
+      <p style={estilo}>Add a little style!</p>
+    </>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Header />);
